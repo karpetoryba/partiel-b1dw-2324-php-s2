@@ -28,6 +28,12 @@ try {
                 </li>
             <?php endforeach; ?>
         </ul>
+        <form method="POST" action="scripts/delete-ticket.php">
+                        <button type="submit" class="btn btn-outline-danger m-1" name="id" value="<?php echo $post['id']; ?>">Supprimer</button>
+                    </form>
+                    <form method="POST" action="/update-carte.php">
+                        <button type="submit" class="btn btn-outline-warning m-1" name="id" value="<?php echo $post['id']; ?>">Modifier</button>
+                    </form>
     </div>
 </div>
 
